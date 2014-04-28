@@ -12,6 +12,12 @@ public class RomanNumberConverterTest {
 		RomanNumberConverter converter = new RomanNumberConverter();
 		assertThat(converter.convert("I"), is(1));
 	}
+	
+	@Test
+	public void testRomanTwo() throws Exception {
+		RomanNumberConverter converter = new RomanNumberConverter();
+		assertThat(converter.convert("II"), is(1));
+	}
 
 	@Test
 	public void testRomanFive() throws Exception {
