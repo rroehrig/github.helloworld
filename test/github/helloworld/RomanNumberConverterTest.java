@@ -15,6 +15,7 @@ public class RomanNumberConverterTest {
 		convertAndAssert("II", 2);
 		convertAndAssert("III", 3);
 		convertAndAssert("V", 5);
+		convertAndAssert("X", 10);
 	}
 
 	private void convertAndAssert(String input, int expected) {
