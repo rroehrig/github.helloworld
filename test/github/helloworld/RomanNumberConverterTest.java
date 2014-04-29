@@ -11,10 +11,13 @@ public class RomanNumberConverterTest {
 
 	@Test
 	public void testRomanLiterals() throws Exception {
-		assertThat(converter.convert("I"), is(1));
-		assertThat(converter.convert("II"), is(2));
-		assertThat(converter.convert("III"), is(3));
-		assertThat(converter.convert("V"), is(5));
+		convertAndAssert("I", 1);
+		convertAndAssert("II", 2);
+		convertAndAssert("III", 3);
+		convertAndAssert("V", 5);
 	}
 
+	private void convertAndAssert(String input, int expected) {
+		assertThat(converter.convert(input), is(expected));
+	}
 }
