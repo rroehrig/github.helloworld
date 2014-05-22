@@ -1,4 +1,4 @@
 github.helloworld
 =================
 
-Exploring github features.
+Exploring github features
